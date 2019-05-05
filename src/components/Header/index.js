@@ -46,6 +46,15 @@ const Header = () => (
           <li>
             <a href="#">Github</a>
           </li>
+          <li>
+            <a href="#">Blog</a>
+          </li>
+          <li>
+            <a href="#">Email</a>
+          </li>
+          <li>
+            <a href="#">Resume</a>
+          </li>
         </ul>
       </Contacts>
     </Container>

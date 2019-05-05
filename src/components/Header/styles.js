@@ -2,6 +2,10 @@ import styled from "styled-components";
 import Header from "../../assets/images/header.jpg";
 import Location from "../../assets/images/location.svg";
 import Linkedin from "../../assets/images/linkedin.svg";
+import Github from "../../assets/images/github.svg";
+import Medium from "../../assets/images/medium.svg";
+import Email from "../../assets/images/email.svg";
+import Resume from "../../assets/images/resume.svg";
 
 export const HeaderContainer = styled.header`
   position: relative;
@@ -62,6 +66,10 @@ export const Container = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 `;
 
 export const Informations = styled.div`
@@ -73,6 +81,7 @@ export const Informations = styled.div`
     font-size: 18px;
     color: #fff;
     font-weight: 200;
+    margin-top: 10px;
 
     &::before {
       content: "";
@@ -87,20 +96,29 @@ export const Informations = styled.div`
 `;
 
 export const Contacts = styled.div`
-  margin-top: 20px;
+  margin-top: 40px;
 
   ul {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   li {
-    margin-right: 20px;
+    margin-right: 30px;
+    list-style: none;
+    transition: transform 0.2s;
+
+    &:hover {
+      transform: translateY(-20%);
+    }
 
     a {
       display: flex;
       flex-direction: column;
       align-items: center;
+      text-decoration: none;
+      color: #fff;
 
       &::before {
         margin-bottom: 5px;
@@ -110,8 +128,6 @@ export const Contacts = styled.div`
 
   li:nth-child(1) {
     a {
-      color: pink;
-
       &::before {
         content: "";
         display: inline-block;
@@ -126,7 +142,59 @@ export const Contacts = styled.div`
 
   li:nth-child(2) {
     a {
-      color: red;
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(${Github});
+        background-color: #fff;
+        border-radius: 50%;
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  li:nth-child(3) {
+    a {
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(${Medium});
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  li:nth-child(4) {
+    a {
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(${Email});
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+      }
+    }
+  }
+
+  li:nth-child(5) {
+    a {
+      &::before {
+        content: "";
+        display: inline-block;
+        background-image: url(${Resume});
+        background-size: 20px 20px;
+        height: 20px;
+        width: 20px;
+        margin-right: 5px;
+      }
     }
   }
 `;
