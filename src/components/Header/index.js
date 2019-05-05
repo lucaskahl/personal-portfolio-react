@@ -1,9 +1,19 @@
 import React from "react";
 
-import { Container, Menu, Title, List, Item, Link } from "./styles";
+import {
+  HeaderContainer,
+  Menu,
+  Title,
+  List,
+  Item,
+  Link,
+  Container,
+  Informations,
+  Contacts
+} from "./styles";
 
 const Header = () => (
-  <Container>
+  <HeaderContainer>
     <Menu>
       <Title>
         Lucas<span>Kahl</span>
@@ -23,7 +33,23 @@ const Header = () => (
         </Item>
       </List>
     </Menu>
-  </Container>
+    <Container>
+      <Informations>
+        <h1>Front-end Software Engineer</h1>
+        <h5>São Paulo</h5>
+      </Informations>
+      <Contacts>
+        <ul>
+          <li>
+            <a href="#">Linkedin</a>
+          </li>
+          <li>
+            <a href="#">Github</a>
+          </li>
+        </ul>
+      </Contacts>
+    </Container>
+  </HeaderContainer>
 );
 
 export default Header;
