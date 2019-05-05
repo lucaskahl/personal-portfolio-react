@@ -8,6 +8,7 @@ import Email from "../../assets/images/email.svg";
 import Resume from "../../assets/images/resume.svg";
 
 export const HeaderContainer = styled.header`
+  border-top: 8px solid #b44a3a;
   position: relative;
   display: flex;
   flex-direction: column;
@@ -66,6 +67,7 @@ export const Container = styled.div`
   left: 50%;
   transform: translate(-50%, -50%);
   z-index: 2;
+  min-width: 415px;
 
   display: flex;
   flex-direction: column;
