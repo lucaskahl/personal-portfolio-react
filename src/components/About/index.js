@@ -1,6 +1,6 @@
 import React from "react";
 
-import { Container, Informations } from "./styles";
+import { Container, Informations, Details } from "./styles";
 
 const About = () => (
   <Container>
@@ -11,7 +11,15 @@ const About = () => (
         <li className="no-active">Praticas de código</li>
       </ol>
     </Informations>
-    <div>blablabla</div>
+    <Details>
+      <h2>O que me diferencia de outros programadores ?</h2>
+      <p>
+        I strive to solve solutions by attacking the prolem at its core. I enjoy
+        a nice coding challenge because I am always learning new things. And I
+        also love the ability to breeze through problems which I've already
+        found prior solutions to.
+      </p>
+    </Details>
   </Container>
 );
 

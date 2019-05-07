@@ -30,6 +30,7 @@ export const Informations = styled.div`
   h2 {
     font-size: 30px;
     margin-bottom: 20px;
+    color: #353a47;
   }
 
   ol {
@@ -72,5 +73,23 @@ export const Informations = styled.div`
         background: #b44a3a;
       }
     }
+  }
+`;
+
+export const Details = styled.div`
+  padding: 80px 0;
+  margin-left: 40px;
+  max-width: 900px;
+
+  h2 {
+    font-size: 24px;
+    color: #0d0504;
+    margin-bottom: 20px;
+  }
+
+  p {
+    line-height: 24px;
+    font-size: 16px;
+    color: #646f79;
   }
 `;
