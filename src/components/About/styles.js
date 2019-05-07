@@ -39,6 +39,7 @@ export const Informations = styled.div`
     li {
       margin-bottom: 20px;
       font-size: 18px;
+      color: ${props => (props.status ? "#b44a3a" : "#000")};
 
       &::after {
         content: "";
@@ -92,4 +93,8 @@ export const Details = styled.div`
     font-size: 16px;
     color: #646f79;
   }
+`;
+
+export const Modal = styled.div`
+  display: ${props => (props.hide ? "none" : "block")};
 `;
