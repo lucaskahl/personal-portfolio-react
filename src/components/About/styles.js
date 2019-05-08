@@ -3,8 +3,10 @@ import styled from "styled-components";
 export const Container = styled.div`
   display: flex;
   flex-direction: row;
-  margin: 0 100px 0;
+  padding: 0 100px 0;
+  padding-bottom: 100px;
   margin-top: 100px;
+  border-bottom: 1px solid rgba(193, 79, 62, 0.5);
 `;
 
 export const Wrapper = styled.div``;
@@ -41,7 +43,7 @@ export const Informations = styled.div`
     li {
       margin-bottom: 20px;
       font-size: 18px;
-      color: ${props => (props.status ? "#b44a3a" : "#000")};
+      color: #b44a3a;
 
       &::after {
         content: "";

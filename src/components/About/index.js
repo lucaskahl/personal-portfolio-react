@@ -15,14 +15,6 @@ class About extends Component {
     ]
   };
 
-  handleClick = () => {
-    this.setState(prevState => ({
-      hide: !prevState.hide,
-      active: !prevState.active,
-      show: prevState.hide
-    }));
-  };
-
   render() {
     const { informations } = this.state;
 
@@ -38,7 +30,7 @@ class About extends Component {
         </Informations>
         <Details>
           {informations.map(information => (
-            <Modal>
+            <Modal key={information.id}>
               <h2>{information.subtitle}</h2>
               <p>{information.text}</p>
             </Modal>
