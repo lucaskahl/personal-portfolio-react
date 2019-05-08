@@ -1,12 +1,18 @@
 import React, { Component } from "react";
 
-import { Container, Informations, Details, Modal } from "./styles";
+import { Container, Wrapper, Informations, Details, Modal } from "./styles";
 
 class About extends Component {
   state = {
-    hide: false,
-    active: true,
-    show: false
+    informations: [
+      {
+        id: 1,
+        title: "Whats sets me apart ?",
+        subtitle: "Whats set me apart from other junior developers",
+        text:
+          "I strive to solve solutions by attacking the prolem at its core. I enjoy a nice coding challenge because I am always learning new things. And I also love the ability to breeze through problems which I've already found prior solutions to."
+      }
+    ]
   };
 
   handleClick = () => {
@@ -18,38 +24,25 @@ class About extends Component {
   };
 
   render() {
-    const { hide, show, active } = this.state;
+    const { informations } = this.state;
 
     return (
       <Container>
         <Informations>
           <h2>Informações sobre mim</h2>
           <ol>
-            <li status={active} onClick={this.handleClick}>
-              O que me diferencia
-            </li>
-            <li>Praticas de código</li>
+            {informations.map(information => (
+              <li key={information.id}>{information.title}</li>
+            ))}
           </ol>
         </Informations>
         <Details>
-          <Modal hide={hide}>
-            <h2>O que me diferencia de outros programadores ?</h2>
-            <p>
-              I strive to solve solutions by attacking the prolem at its core. I
-              enjoy a nice coding challenge because I am always learning new
-              things. And I also love the ability to breeze through problems
-              which I've already found prior solutions to.
-            </p>
-          </Modal>
-          <Modal hide={show}>
-            <h2>O que me diferencia de outros programadores ?</h2>
-            <p>
-              I strive to solve solutions by attacking the prolem at its core. I
-              enjoy a nice coding challenge because I am always learning new
-              things. And I also love the ability to breeze through problems
-              which I've already found prior solutions to.
-            </p>
-          </Modal>
+          {informations.map(information => (
+            <Modal>
+              <h2>{information.subtitle}</h2>
+              <p>{information.text}</p>
+            </Modal>
+          ))}
         </Details>
       </Container>
     );

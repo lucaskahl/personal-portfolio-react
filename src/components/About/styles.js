@@ -7,6 +7,8 @@ export const Container = styled.div`
   margin-top: 100px;
 `;
 
+export const Wrapper = styled.div``;
+
 export const Informations = styled.div`
   display: flex;
   flex-wrap: wrap;
