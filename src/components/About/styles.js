@@ -32,6 +32,7 @@ export const Informations = styled.div`
     font-size: 30px;
     margin-bottom: 20px;
     color: #353a47;
+    max-width: 300px;
   }
 
   ol {

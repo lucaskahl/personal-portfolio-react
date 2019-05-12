@@ -20,6 +20,7 @@ export const ProjectsWrapper = styled.div`
   align-items: center;
   justify-content: left;
   max-width: 800px;
+  margin-bottom: 50px;
 `;
 
 export const Information = styled.div`
@@ -32,8 +33,8 @@ export const Information = styled.div`
 
   .project {
     &__background {
-      background-image: url("http://raymond-jay.herokuapp.com/static/media/personal_site_poster.18d40346.jpg");
-      background-size: 300px 200px;
+      background-size: 100% 100%;
+      background-position: center;
       width: 300px;
       height: 200px;
       box-shadow: 0 8px 10px rgba(0, 0, 0, 0.3);
