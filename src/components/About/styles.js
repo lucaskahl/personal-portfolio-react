@@ -12,13 +12,10 @@ export const Container = styled.div`
 export const Wrapper = styled.div``;
 
 export const Informations = styled.div`
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: column;
   position: relative;
   padding: 80px 0;
   padding-left: 0px;
-  max-width: 300px;
+  min-width: 300px;
 
   &::after {
     content: "";

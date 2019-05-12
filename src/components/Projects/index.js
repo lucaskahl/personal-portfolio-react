@@ -1,6 +1,12 @@
 import React, { Component } from "react";
 
-import { Container, ProjectsWrapper, Information, Overview } from "./styles";
+import {
+  Container,
+  ProjectsWrapper,
+  Information,
+  Tecnologies,
+  Overview
+} from "./styles";
 
 export default class Projects extends Component {
   render() {
@@ -16,8 +22,8 @@ export default class Projects extends Component {
                 <a>Live Preview</a>
                 <a>View Source</a>
               </div>
-              <div>
-                <p>Tecnologias usadas</p>
+              <Tecnologies>
+                <h3>Tecnologias usadas</h3>
                 <ul>
                   <li>ReactJS</li>
                   <li>Styled Components</li>
@@ -25,12 +31,15 @@ export default class Projects extends Component {
                   <li>CSS3</li>
                   <li>HTML5</li>
                 </ul>
-              </div>
+              </Tecnologies>
             </div>
           </Information>
           <Overview>
             <h4>Overview</h4>
-            <p>Simple asdasdasdasd</p>
+            <p>
+              Simple React project to display my portfolio of work. It was built
+              by me using React / Typescript
+            </p>
           </Overview>
         </ProjectsWrapper>
       </Container>
