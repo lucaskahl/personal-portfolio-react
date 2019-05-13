@@ -10,8 +10,16 @@ export const Container = styled.div`
   padding: 0 100px 0;
   margin-bottom: 50px;
 
+  @media (max-width: 768px) {
+    padding: 0;
+  }
+
   h1 {
     margin-top: 50px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 `;
 
@@ -21,6 +29,12 @@ export const ProjectsWrapper = styled.div`
   justify-content: left;
   max-width: 800px;
   margin-bottom: 50px;
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+  }
 `;
 
 export const Information = styled.div`
@@ -96,8 +110,11 @@ export const Tecnologies = styled.div`
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    max-height: 100px;
-    max-width: 300px;
+    max-height: 200px;
+
+    @media (max-width: 768px) {
+      max-height: none;
+    }
 
     li {
       margin: 5px;
@@ -119,4 +136,12 @@ export const Tecnologies = styled.div`
 
 export const Overview = styled.div`
   margin-left: 100px;
+  display: flex;
+  flex-direction: column;
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    margin-left: 0px;
+    max-width: 300px;
+  }
 `;

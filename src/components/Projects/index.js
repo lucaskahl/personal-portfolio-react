@@ -15,9 +15,9 @@ export default class Projects extends Component {
         id: 1,
         title: "Personal Portfolio",
         image: "https://i.imgur.com/bUU4Yvd.jpg",
-        source: "https://google.com",
-        link: "https://github.com/lucaskahl/personal-portfolio-react",
-        tecnologies: ["ReactJS", "Styled Components", "ES6+", "CSS3", "HTML5"],
+        source: "https://github.com/lucaskahl/personal-portfolio-react",
+        link: "#",
+        tecnologies: ["ReactJS", "Styled Components", "ES6+", "CSS3"],
         overview:
           "Simple React project to display my portfolio of work. It was built by me using React / Typescript"
       },

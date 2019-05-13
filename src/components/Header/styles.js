@@ -42,6 +42,10 @@ export const Title = styled.h3`
   font-weight: bold;
   font-size: 25px;
 
+  @media (max-width: 768px) {
+    margin: 0 auto;
+  }
+
   span {
     font-weight: 200;
   }
@@ -50,6 +54,10 @@ export const Title = styled.h3`
 export const List = styled.ul`
   display: flex;
   list-style: none;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `;
 
 export const Item = styled.li`

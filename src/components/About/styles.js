@@ -7,6 +7,14 @@ export const Container = styled.div`
   padding-bottom: 100px;
   margin-top: 100px;
   border-bottom: 1px solid rgba(193, 79, 62, 0.5);
+
+  @media (max-width: 768px) {
+    padding: 0px;
+    display: block;
+    max-width: 300px;
+    margin: 0 auto;
+    border-bottom: none;
+  }
 `;
 
 export const Wrapper = styled.div``;
@@ -16,6 +24,13 @@ export const Informations = styled.div`
   padding: 80px 0;
   padding-left: 0px;
   min-width: 300px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 5px;
+    &::after {
+      display: none;
+    }
+  }
 
   &::after {
     content: "";
@@ -83,6 +98,11 @@ export const Details = styled.div`
   padding: 80px 0;
   margin-left: 40px;
   max-width: 900px;
+
+  @media (max-width: 768px) {
+    margin-left: 0px;
+    padding-top: 5px;
+  }
 
   h2 {
     font-size: 24px;
