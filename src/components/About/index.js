@@ -19,7 +19,7 @@ class About extends Component {
     const { informations } = this.state;
 
     return (
-      <Container>
+      <Container id="about">
         <Informations>
           <h2>Informações sobre mim</h2>
           <ol>

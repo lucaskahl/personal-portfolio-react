@@ -37,6 +37,10 @@ export const Contacts = styled.div`
     list-style: none;
     transition: transform 0.2s;
 
+    @media (max-width: 768px) {
+      margin-right: 15px;
+    }
+
     &:hover {
       transform: translateY(-20%);
     }

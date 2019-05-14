@@ -37,7 +37,7 @@ export default class Projects extends Component {
     const { projects } = this.state;
 
     return (
-      <Container>
+      <Container id="projects">
         <h1>Projetos</h1>
         {projects.map(project => (
           <ProjectsWrapper key={project.id}>

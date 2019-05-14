@@ -77,6 +77,12 @@ export const Container = styled.div`
   z-index: 2;
   min-width: 415px;
 
+  @media (max-width: 768px) {
+    min-width: initial;
+    position: initial;
+    transform: none;
+  }
+
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -85,6 +91,11 @@ export const Container = styled.div`
 export const Informations = styled.div`
   h1 {
     color: #fff;
+
+    @media (max-width: 768px) {
+      text-align: center;
+      font-size: 26px;
+    }
   }
 
   h5 {
@@ -92,6 +103,10 @@ export const Informations = styled.div`
     color: #fff;
     font-weight: 200;
     margin-top: 10px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
 
     &::before {
       content: "";
@@ -118,6 +133,10 @@ export const Contacts = styled.div`
     margin-right: 30px;
     list-style: none;
     transition: transform 0.2s;
+
+    @media (max-width: 768px) {
+      margin-right: 15px;
+    }
 
     &:hover {
       transform: translateY(-20%);

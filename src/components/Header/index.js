@@ -23,10 +23,10 @@ const Header = () => (
           <Link href="#">Teconologias</Link>
         </Item>
         <Item>
-          <Link href="#">Sobre mim</Link>
+          <Link href="#about">Sobre mim</Link>
         </Item>
         <Item>
-          <Link href="#">Projetos</Link>
+          <Link href="#projects">Projetos</Link>
         </Item>
         <Item>
           <Link href="#">Blog</Link>
