@@ -23,10 +23,21 @@ export const Informations = styled.div`
   position: relative;
   padding: 80px 0;
   padding-left: 0px;
-  min-width: 300px;
+  min-width: 250px;
+
+  img {
+    max-width: 200px;
+    border-radius: 50%;
+  }
 
   @media (max-width: 768px) {
     padding-bottom: 5px;
+    img {
+      display: block;
+      margin: 0 auto;
+      margin-bottom: 20px;
+    }
+
     &::after {
       display: none;
     }
@@ -100,6 +111,7 @@ export const Details = styled.div`
   max-width: 900px;
 
   @media (max-width: 768px) {
+    padding: 40px 0;
     margin-left: 0px;
     padding-top: 5px;
   }
@@ -108,6 +120,10 @@ export const Details = styled.div`
     font-size: 24px;
     color: #0d0504;
     margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      text-align: center;
+    }
   }
 
   p {
@@ -118,5 +134,8 @@ export const Details = styled.div`
 `;
 
 export const Modal = styled.div`
-  display: ${props => (props.hide ? "none" : "block")};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `;

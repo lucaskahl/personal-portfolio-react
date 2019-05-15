@@ -10,19 +10,23 @@ const Footer = () => (
     <Contacts>
       <ul>
         <li>
-          <a href="#">Linkedin</a>
+          <a target="_blank" href="https://www.linkedin.com/in/lucaskahl/">
+            Linkedin
+          </a>
         </li>
         <li>
-          <a href="#">Github</a>
+          <a target="_blank" href="https://github.com/lucaskahl">
+            Github
+          </a>
         </li>
         <li>
-          <a href="#">Blog</a>
+          <a href="https://medium.com/@lucaschangkahl">Blog</a>
         </li>
         <li>
-          <a href="#">Email</a>
+          <a href="mailto:lucaschangkahl@gmail.com">Email</a>
         </li>
         <li>
-          <a href="#">Resume</a>
+          <a>Resume</a>
         </li>
       </ul>
     </Contacts>

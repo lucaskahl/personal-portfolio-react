@@ -39,10 +39,15 @@ export const Contacts = styled.div`
 
     @media (max-width: 768px) {
       margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
     }
 
     &:hover {
-      transform: translateY(-20%);
+      transform: ${props =>
+        props.disabled ? "translateY(0%)" : "translateY(-20%)"};
     }
 
     a {

@@ -44,6 +44,7 @@ export const Title = styled.h3`
 
   @media (max-width: 768px) {
     margin: 0 auto;
+    font-size: 28px;
   }
 
   span {
@@ -79,8 +80,7 @@ export const Container = styled.div`
 
   @media (max-width: 768px) {
     min-width: initial;
-    position: initial;
-    transform: none;
+    position: absolute;
   }
 
   display: flex;
@@ -136,6 +136,10 @@ export const Contacts = styled.div`
 
     @media (max-width: 768px) {
       margin-right: 15px;
+
+      &:last-child {
+        margin-right: 0px;
+      }
     }
 
     &:hover {

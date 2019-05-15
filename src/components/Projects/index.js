@@ -29,6 +29,15 @@ export default class Projects extends Component {
         link: "https://github.com/lucaskahl/personal-portfolio-react",
         tecnologies: ["NodeJS", "AdonisJS", "ES6+", "CSS3", "HTML5"],
         overview: "Node project using AdonisJS and a View..."
+      },
+      {
+        id: 3,
+        title: "Wedding website",
+        image: "https://i.imgur.com/rl0MLhz.jpg",
+        source: "https://google.com",
+        link: "https://github.com/lucaskahl/personal-portfolio-react",
+        tecnologies: ["HTML", "CSS3", "ITCSS", "RSCSS", "Sass", "NodeJS"],
+        overview: "A Wedding website with the best of front end architeture"
       }
     ]
   };
