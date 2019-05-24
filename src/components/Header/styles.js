@@ -6,6 +6,7 @@ import Github from "../../assets/images/github.svg";
 import Medium from "../../assets/images/medium.svg";
 import Email from "../../assets/images/email.svg";
 import Resume from "../../assets/images/resume.svg";
+import MenuIcon from "../../assets/images/menu.svg";
 
 export const HeaderContainer = styled.header`
   border-top: 8px solid #b44a3a;
@@ -57,7 +58,12 @@ export const List = styled.ul`
   list-style: none;
 
   @media (max-width: 768px) {
-    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    transform: ${props =>
+      props.status ? "translateX: 100%" : "translateX: 100%"};
   }
 `;
 
@@ -230,4 +236,21 @@ export const Contacts = styled.div`
       }
     }
   }
+`;
+
+export const Trigger = styled.div`
+  @media (min-width: 768px) {
+    display: none;
+  }
+
+  content: "";
+  z-index: 2;
+  position: fixed;
+  left: 5px;
+  top: 10px;
+  background-image: url(${MenuIcon});
+  background-size: 40px 40px;
+  height: 40px;
+  width: 40px;
+  cursor: pointer;
 `;
