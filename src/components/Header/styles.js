@@ -58,18 +58,28 @@ export const List = styled.ul`
   list-style: none;
 
   @media (max-width: 768px) {
-    background-color: #fff;
+    background-color: rgba(180, 74, 58, 0.5);
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
     position: fixed;
     left: 0;
     top: 0;
     transform: ${props =>
       props.status ? "translateX(0px)" : "translateX(-100%)"};
+    transition: transform linear 0.3s;
+    z-index: 9 !important;
   }
 `;
 
 export const Item = styled.li`
   margin-right: 20px;
+
+  @media (max-width: 768px) {
+    margin-bottom: 20px;
+  }
 `;
 
 export const Link = styled.a`
@@ -77,7 +87,9 @@ export const Link = styled.a`
   color: #fff;
 
   @media (max-width: 768px) {
-    color: black;
+    color: #fff;
+    font-size: 30px;
+    font-weight: bold;
   }
 `;
 
@@ -249,7 +261,7 @@ export const Trigger = styled.div`
   }
 
   content: "";
-  z-index: 2;
+  z-index: 10;
   position: fixed;
   left: 5px;
   top: 10px;
@@ -259,6 +271,6 @@ export const Trigger = styled.div`
   width: 40px;
   cursor: pointer;
   transform: ${props =>
-    props.status ? "translateX(130px)" : "translateX(0px)"};
-  translate: transform linear 2s;
+    props.status ? "translateX(85vw)" : "translateX(0px)"};
+  transition: transform linear 0.3s;
 `;
