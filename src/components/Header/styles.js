@@ -35,7 +35,7 @@ export const Menu = styled.nav`
   align-items: center;
   margin: 0 100px 0;
   height: 20%;
-  z-index: 2;
+  z-index: ${props => (props.status ? "0" : "2")};
 `;
 
 export const Title = styled.h3`
@@ -98,7 +98,7 @@ export const Container = styled.div`
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  z-index: 2;
+  z-index: ${props => (props.status ? "0" : "2")};
   min-width: 415px;
 
   @media (max-width: 768px) {

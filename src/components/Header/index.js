@@ -51,8 +51,8 @@ export default class Header extends Component {
             </Item>
           </List>
         </Menu>
-        <Container>
-          <Informations>
+        <Container status={active}>
+          <Informations status={active}>
             <h1>Front-end Software Engineer</h1>
             <h5>São Paulo</h5>
           </Informations>
