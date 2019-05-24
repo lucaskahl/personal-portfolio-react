@@ -19,7 +19,11 @@ export default class Header extends Component {
   };
 
   handleClickMenu = () => {
-    console.log("cliqueee");
+    const { active } = this.state;
+
+    this.setState({
+      active: !active
+    });
   };
 
   render() {
@@ -27,12 +31,12 @@ export default class Header extends Component {
 
     return (
       <HeaderContainer>
-        <Trigger onClick={this.handleClickMenu} />
+        <Trigger status={active} onClick={this.handleClickMenu} />
         <Menu>
           <Title>
             Lucas<span>Kahl</span>
           </Title>
-          <List active>
+          <List status={active}>
             <Item>
               <Link href="#">Teconologias</Link>
             </Item>

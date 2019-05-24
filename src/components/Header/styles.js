@@ -58,12 +58,13 @@ export const List = styled.ul`
   list-style: none;
 
   @media (max-width: 768px) {
+    background-color: #fff;
     flex-direction: column;
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     transform: ${props =>
-      props.status ? "translateX: 100%" : "translateX: 100%"};
+      props.status ? "translateX(0px)" : "translateX(-100%)"};
   }
 `;
 
@@ -74,6 +75,10 @@ export const Item = styled.li`
 export const Link = styled.a`
   text-decoration: none;
   color: #fff;
+
+  @media (max-width: 768px) {
+    color: black;
+  }
 `;
 
 export const Container = styled.div`
@@ -253,4 +258,7 @@ export const Trigger = styled.div`
   height: 40px;
   width: 40px;
   cursor: pointer;
+  transform: ${props =>
+    props.status ? "translateX(130px)" : "translateX(0px)"};
+  translate: transform linear 2s;
 `;
