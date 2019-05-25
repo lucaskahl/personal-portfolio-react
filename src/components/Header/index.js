@@ -38,7 +38,7 @@ export default class Header extends Component {
           </Title>
           <List status={active}>
             <Item>
-              <Link href="#">Teconologias</Link>
+              <Link href="#technologies">Teconologias</Link>
             </Item>
             <Item>
               <Link href="#about">Sobre mim</Link>
@@ -47,7 +47,7 @@ export default class Header extends Component {
               <Link href="#projects">Projetos</Link>
             </Item>
             <Item>
-              <Link href="#">Blog</Link>
+              <Link href="#blog">Blog</Link>
             </Item>
           </List>
         </Menu>

@@ -25,8 +25,8 @@ export default class Projects extends Component {
         id: 2,
         title: "GoBarber",
         image: "https://i.imgur.com/JKB7oIU.png",
-        source: "https://google.com",
-        link: "https://github.com/lucaskahl/personal-portfolio-react",
+        source: null,
+        link: null,
         tecnologies: ["NodeJS", "AdonisJS", "ES6+", "CSS3", "HTML5"],
         overview: "Node project using AdonisJS and a View..."
       },
@@ -34,8 +34,8 @@ export default class Projects extends Component {
         id: 3,
         title: "Wedding website",
         image: "https://i.imgur.com/rl0MLhz.jpg",
-        source: "https://google.com",
-        link: "https://github.com/lucaskahl/personal-portfolio-react",
+        source: "https://github.com/lucaskahl/personal-portfolio-react",
+        link: null,
         tecnologies: ["HTML", "CSS3", "ITCSS", "RSCSS", "Sass", "NodeJS"],
         overview: "A Wedding website with the best of front end architeture"
       }
@@ -58,12 +58,20 @@ export default class Projects extends Component {
                   className="project__background"
                 />
                 <div className="project__actions">
-                  <a target="_blank" href={project.link}>
-                    Live Preview
-                  </a>
-                  <a target="_blank" href={project.source}>
-                    View Source
-                  </a>
+                  {project.link !== null ? (
+                    <a target="_blank" href={project.link}>
+                      Live Preview
+                    </a>
+                  ) : (
+                    <a disabled>Live Preview</a>
+                  )}
+                  {project.source !== null ? (
+                    <a target="_blank" href={project.source}>
+                      View Source
+                    </a>
+                  ) : (
+                    <a disabled>View Source</a>
+                  )}
                 </div>
                 <Tecnologies>
                   <h3>Tecnologias usadas</h3>

@@ -61,7 +61,8 @@ export const Information = styled.div`
       cursor: pointer;
 
       a {
-        color: #b44a3a;
+        color: ${props => (props.disabled ? "gray" : "#b44a3a")};
+        cursor: ${props => (props.disabled ? "default" : "pointer")};
       }
 
       a:nth-child(1) {
