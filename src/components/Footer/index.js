@@ -4,9 +4,8 @@ import { Container, Contacts } from "./styles";
 
 const Footer = () => (
   <Container>
-    <h3>Obrigado</h3>
-    <p>Qualquer dúvida entre em contato :)</p>
-
+    <h3>Thank you</h3>
+    <p>Any questions please contact me :)</p>
     <Contacts>
       <ul>
         <li>

@@ -47,7 +47,7 @@ export default class Projects extends Component {
 
     return (
       <Container id="projects">
-        <h1>Projetos</h1>
+        <h1>Projects</h1>
         {projects.map(project => (
           <ProjectsWrapper key={project.id}>
             <Information>
@@ -74,7 +74,7 @@ export default class Projects extends Component {
                   )}
                 </div>
                 <Tecnologies>
-                  <h3>Tecnologias usadas</h3>
+                  <h3>Technologies</h3>
                   <ul>
                     {project.tecnologies.map(item => (
                       <li key={project.tecnologies.indexOf(item)}>{item}</li>
