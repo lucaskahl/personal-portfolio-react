@@ -38,16 +38,13 @@ export default class Header extends Component {
           </Title>
           <List status={active}>
             <Item>
-              <Link href="#technologies">Teconologias</Link>
-            </Item>
-            <Item>
               <Link href="#about">Sobre mim</Link>
             </Item>
             <Item>
               <Link href="#projects">Projetos</Link>
             </Item>
             <Item>
-              <Link href="#blog">Blog</Link>
+              <Link href="https://medium.com/@lucaschangkahl">Blog</Link>
             </Item>
           </List>
         </Menu>

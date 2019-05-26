@@ -136,6 +136,8 @@ export const Details = styled.div`
 export const Modal = styled.div`
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+
+  h2 {
+    text-align: center;
+  }
 `;

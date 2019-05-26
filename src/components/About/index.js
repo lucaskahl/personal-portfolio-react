@@ -12,10 +12,17 @@ class About extends Component {
         <Details>
           <Modal>
             <h2>Hey friends, how are you ?</h2>
+            <p>My name is Lucas Kahl</p>
             <p>
-              My name is Lucas Kahl from Brazil, I've been working as Front-End
-              Developer since 2017. Currently. Currently i'm working at iCasei.
-              I love code cool stuffs :-).
+              Front-end developer with great emphasis on code quality, front-end
+              architectures, accessibility, cross-browser and performance.
+              Always learning new things and looking for challenges.
+            </p>
+            <p>
+              Main interests: Web development, design patterns, programming
+              paradigms, TDD, front-end architectures / frameworks / libraries,
+              algorithms, interface accessibility / usability, and application
+              performance..
             </p>
           </Modal>
         </Details>

@@ -19,7 +19,7 @@ export default class Projects extends Component {
         link: "#",
         tecnologies: ["ReactJS", "Styled Components", "ES6+", "CSS3"],
         overview:
-          "Simple React project to display my portfolio of work. It was built by me using React / Typescript"
+          "Simple React project to display my portfolio of work. It was built by me using React / Styled Components"
       },
       {
         id: 2,
@@ -27,15 +27,15 @@ export default class Projects extends Component {
         image: "https://i.imgur.com/JKB7oIU.png",
         source: null,
         link: null,
-        tecnologies: ["NodeJS", "AdonisJS", "ES6+", "CSS3", "HTML5"],
-        overview: "Node project using AdonisJS and a View..."
+        tecnologies: ["NodeJS", "AdonisJS", "NJK", "ES6+", "CSS3", "HTML5"],
+        overview: "Node project using AdonisJS and a NJK View..."
       },
       {
         id: 3,
         title: "Wedding website",
         image: "https://i.imgur.com/rl0MLhz.jpg",
         source: "https://github.com/lucaskahl/personal-portfolio-react",
-        link: null,
+        link: "https://lucaskahl.github.io/wedding/",
         tecnologies: ["HTML", "CSS3", "ITCSS", "RSCSS", "Sass", "NodeJS"],
         overview: "A Wedding website with the best of front end architeture"
       }
